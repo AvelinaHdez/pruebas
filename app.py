@@ -26,7 +26,7 @@ def index():
 
         # Hacer la predicción
         prediction = model.predict(data_scaled)
-        total = prediction[0][0]
+        total = prediction[0]
 
     return render_template('index.html', total=total)
 
